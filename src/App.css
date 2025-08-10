@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+/* Whole page background and padding */
+.app-container {
+  background: #f7f9fa;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Center section for PdfRename */
+.top-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Grid layout for 4 cards */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px;
+}
+
+/* Each box wrapper styling */
+.grid-item {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .grid-section {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
   }
 }
+@media (max-width: 600px) {
+  .grid-section {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+  }
+}
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal boxes */
+  gap: 20px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dhl-group {
   display: flex;
   flex-direction: column;
+  gap: 20px; /* space between DhlInvoice and DhlAwb */
+}
+
+.dhl-group hr {
+  border: 0;
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.dhlBack{
+  background-image: url('https://www.pngitem.com/pimgs/m/78-785160_magazine-article-dhl-png-logo-dhl-png-logo.png');
+   background-repeat: no-repeat, repeat;
+   height: 500px;
+   width: 50px;
+   
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.section-header {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 8px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

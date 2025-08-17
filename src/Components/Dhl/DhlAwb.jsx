@@ -57,7 +57,7 @@ const DhlAwb=()=>{
 
     // ZIP download Fedex jaisa
     const zipData = await zip.generateAsync({ type: "blob" });
-    saveAs(zipData, "Dhl_Invoices.zip");
+    saveAs(zipData, "Dhl_Awb.zip");
 
     setRenamedFiles(results);
     setLoading(false);

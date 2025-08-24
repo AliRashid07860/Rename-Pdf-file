@@ -37,7 +37,7 @@ function PdfSplitter() {
 
         for (let i = 1; i <= pdf.numPages; i++) {
           const text = await getTextFromPage(pdf, i);
-          if (text.includes("CSBV_DEL_2024-2025")) {
+          if (text.includes("CSBV_DEL_2025-2026" || "CSBV_DEL_2025-2026")) {
             startIndexes.push(i - 1);
           }
         }
@@ -104,7 +104,7 @@ function PdfSplitter() {
         <span role="img" aria-label="Split">✂️</span>
         Bulk PDF Split & Download
       </h2>
-      <small>Upload multiple PDFs, split at "CSBV_DEL_2024-2025", and download as ZIP.</small>
+      <small>Upload multiple PDFs, split Shipping bills, and download as ZIP.</small>
       
       <label className="file-label">
         Select PDFs

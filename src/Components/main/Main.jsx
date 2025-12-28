@@ -7,6 +7,7 @@ import FedexInvoices from "../Fedex/FedexInvoices";
 import DhlInvoice from '../Dhl/DhlInvoice';
 import DhlAwb from '../Dhl/DhlAwb';
 import AremexInvoices from "../Aremax/AremexInvoices";
+import AramexAwb from "../Aremax/AremexAwb";
 
 function Main() {
   return (
@@ -79,6 +80,8 @@ function Main() {
             <img src='https://cdn.posttrack.com/cdn/images/carriers/thumbnails/0098-aramex.png' alt="Aramex Logo" className="logo" />
           </h2>
           <AremexInvoices />
+           <hr />
+           <AramexAwb/>
         </div>
       </div>
     </div>

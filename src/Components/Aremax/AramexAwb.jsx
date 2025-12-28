@@ -12,7 +12,7 @@ const AramexAwb=()=>{
   // Regex method same tarike se jaise DhlInvoice me tha (match[1] use karte hain)
   // Lekin pattern FedexInvoice ka use hoga:
   const extractInvoiceNumber = (text) => {
-    const regexList = [/WAYBILL\s*([A-Z0-9-]+)/i]; // Fedex ka regex
+    const regexList = [/WAYBILL\s*([A-Z0-9-]+)/i]; // aramex ka regex
     for (let regex of regexList) {
       const match = text.match(regex);
       if (match) {
@@ -65,8 +65,8 @@ const AramexAwb=()=>{
 
   return (
     <div className="section">
-      <h2 className="section-header"><span>🛄</span> DHL AWB PDF Renamer</h2>
-      <small>Upload DHL AWB PDFs.</small>
+      <h2 className="section-header"><span>🛄</span> Aramex AWB PDF Renamer</h2>
+      <small>Upload Aramex AWB PDFs.</small>
       <label className="file-label">
         Choose Files
         <input type="file" accept="application/pdf" multiple onChange={(e) => handleFiles(e.target.files)} />

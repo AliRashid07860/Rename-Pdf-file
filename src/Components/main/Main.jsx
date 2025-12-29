@@ -7,6 +7,7 @@ import FedexInvoices from "../Fedex/FedexInvoices";
 import DhlInvoice from '../Dhl/DhlInvoice';
 import DhlAwb from '../Dhl/DhlAwb';
 import AremexInvoices from "../Aremax/AremexInvoices";
+import AramexAwb from "../Aremax/AramexAwb";
 
 function Main() {
   return (
@@ -55,7 +56,7 @@ function Main() {
         {/* Fedex */}
         <div className="grid-item">
           <h2 className="section-header">
-            <img src='https://tr.rbxcdn.com/f9066c373b9ff96c5193a26eedd71af9/420/420/Decal/Png' alt="Fedex Logo" className="logo" />
+            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TcqP_ELQlJknHFsNtjJbQB3ARy0Q3petu3XF9M3m&s' alt="Fedex Logo" className="logo" />
           </h2>
             <FedexInvoices/>
         </div>
@@ -79,6 +80,8 @@ function Main() {
             <img src='https://cdn.posttrack.com/cdn/images/carriers/thumbnails/0098-aramex.png' alt="Aramex Logo" className="logo" />
           </h2>
           <AremexInvoices />
+           <hr />
+           <AramexAwb/>
         </div>
       </div>
     </div>
